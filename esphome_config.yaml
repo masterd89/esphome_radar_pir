@@ -1,5 +1,5 @@
 esphome:
-  name: "radar-pir-presence-detector"
+  name: "master-presence"
   friendly_name: "Radar-PIR Presence detector"
   name_add_mac_suffix: true
   project:
