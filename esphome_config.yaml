@@ -23,6 +23,7 @@ api:
   encryption:
     key: "${API_ENCRYPTION_KEY}"
 
+
 ota:
   - platform: esphome
     password: "${OTA_PASSWORD}"
