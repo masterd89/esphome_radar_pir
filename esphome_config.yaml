@@ -41,8 +41,8 @@ web_server:
 wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Radar-Pir-Board Fallback Hotspot"
-    password: "axixpmZ2l3X4"
+    ssid: "Radar-Pir-Board Fallback Hotspot ${SERIAL_NUMBER}"
+    password: "${AP_PASSWORD}"
 
 captive_portal:
 
