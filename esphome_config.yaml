@@ -2,7 +2,7 @@
 
 esphome:
   name: "radar-pir-presence-detector-${SERIAL_NUMBER}"
-  friendly_name: "Radar-PIR Presence detector"
+  friendly_name: "Radar-PIR Presence detector ${SERIAL_NUMBER}"
 
 external_components:
     - source:
