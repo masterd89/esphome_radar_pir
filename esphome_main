@@ -1,0 +1,12 @@
+packages:
+  remote_package_files:
+    url: https://github.com/masterd89/esphome_radar_pir
+    files: 
+      - path: esphome_config.yaml  # optional; if not specified, all files will be included
+    
+    refresh: 1min
+
+dashboard_import:
+  package_import_url: github://masterd89/esphome_radar_pir/new/main
+  import_full_config: false 
+
