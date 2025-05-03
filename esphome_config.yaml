@@ -19,12 +19,13 @@ logger:
 
 # Enable Home Assistant API
 api:
+  reboot_timeout: 0s
   encryption:
-    key: "+8jonemdJkdHIqO4tzgFWaj+NAeGg1/2yQM0/OC2gbw="
+    key: "${API_ENCRYPTION_KEY}"
 
 ota:
   - platform: esphome
-    password: "100d8ca3a160b89e5f8af509a9218c63"
+    password: "${OTA_PASSWORD}"
 
 web_server:
    port: 80
