@@ -3,7 +3,7 @@ esphome:
   friendly_name: "Radar-PIR Presence detector"
   name_add_mac_suffix: true
   project:
-    name: "Radar_pir_presence_sensor"
+    name: "davideb.radar_pir_presence_sensor"
     version: "1.0.0"
 
 external_components:
