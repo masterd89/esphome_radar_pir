@@ -1,8 +1,10 @@
-
-
 esphome:
-  name: "radar-pir-presence-detector-${SERIAL_NUMBER}"
-  friendly_name: "Radar-PIR Presence detector ${SERIAL_NUMBER}"
+  name: "radar-pir-presence-detector"
+  friendly_name: "Radar-PIR Presence detector"
+  name_add_mac_suffix: true
+  project:
+    name: "Radar_pir_presence_sensor"
+    version: "1.0.0"
 
 external_components:
     - source:
@@ -21,12 +23,11 @@ logger:
 api:
   reboot_timeout: 0s
   encryption:
-    key: "${API_ENCRYPTION_KEY}"
+    key: "uZEMtaeBwE1UayeHNvvm0sWrjbkqwsVboNSsRWY7eFw"
 
 
 ota:
   - platform: esphome
-    password: "${OTA_PASSWORD}"
 
 web_server:
    port: 80
@@ -34,17 +35,19 @@ web_server:
    sorting_groups:
     - id: "sensori"
       name: "Sensori"
+      sorting_weight: 0
     - id: "uscite"
       name: "Uscite"
+      sorting_weight: 1
     - id: "stato"
       name: "Stato"
+      sorting_weight: 2
    
 
 wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Radar-Pir-Board Fallback Hotspot ${SERIAL_NUMBER}"
-    password: "${AP_PASSWORD}"
+    ssid: "Radar-Pir-Board Fallback Hotspot"
 
 captive_portal:
 
