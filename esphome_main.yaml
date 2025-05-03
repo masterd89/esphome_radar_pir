@@ -7,6 +7,6 @@ packages:
     refresh: 1min
 
 dashboard_import:
-  package_import_url: github://masterd89/esphome_radar_pir/new/main
+  package_import_url: github://masterd89/esphome_radar_pir/esphome_main.yaml
   import_full_config: false 
 
