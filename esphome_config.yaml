@@ -119,9 +119,11 @@ state_machine:
         - no_presence -> pir_input
         - pir_cooldown -> pir_input
         - presence_mmwave_retrigger -> pir_input
+        - mmwave_input -> mmwave_input
     - name: PIR_off
       transitions:
         - pir_input -> pir_cooldown
+        - mmwave_input -> mmwave_input
     - name: PIR_cooldown_elapsed
       transitions:
         - pir_cooldown -> no_presence
