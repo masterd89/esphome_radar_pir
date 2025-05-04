@@ -22,8 +22,7 @@ logger:
 # Enable Home Assistant API
 api:
   reboot_timeout: 0s
-  encryption:
-    key: "l5W1iPcsVs/1WvWRSbydrzoRccivP96yzxxzgP9q7e4="
+  
 
 
 ota:
